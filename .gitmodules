@@ -4,6 +4,3 @@
 [submodule "freedesktop"]
 	path = freedesktop
 	url = https://github.com/lcpz/awesome-freedesktop.git
-[submodule "awesome-freedesktop"]
-	path = awesome-freedesktop
-	url = https://github.com/lcpz/awesome-freedesktop.git
