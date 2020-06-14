@@ -406,8 +406,8 @@ local globalKeys = awful.util.table.join(
         {description = "open system monitor", group = 'launcher'}
     ),
     awful.key(
-        {modkey}, 
-        'e',
+        {altkey}, 
+        'space',
         function()
             local focused = awful.screen.focused()
 
