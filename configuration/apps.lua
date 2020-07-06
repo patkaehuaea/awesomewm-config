@@ -27,9 +27,6 @@ return {
 	},
 	
 	run_on_start_up = {
-		'picom -b --experimental-backends --dbus --config ~/.config/picom.conf',
-		'signal-desktop', -- Slack messaging
-		'slack', -- Slack messaging
 	  'xfce4-screensaver --no-daemon',
 		'xrdb $HOME/.Xresources', -- X windows config and settings
 	},
