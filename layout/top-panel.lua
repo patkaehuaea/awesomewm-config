@@ -290,8 +290,6 @@ local TopPanel = function(s, offset)
 	s.updater 		= require('widget.package-updater')()
 	s.end_session 		= require('widget.end-session')()
 	s.screen_rec 	= require('widget.screen-recorder')()
-	s.bluetooth   	= require('widget.bluetooth')()
-	s.wifi        	= require('widget.wifi')()
   s.blue_light = require('widget.blue-light')
   s.float_panel  	= require('layout.floating-panel')()
   s.r_dashboard 	= require('layout.right-panel.right-panel-opener')()
@@ -324,8 +322,6 @@ local TopPanel = function(s, offset)
 			s.blue_light,
 			s.updater,
 			s.screen_rec,
-			s.bluetooth,
-			s.wifi,
 			s.end_session,
 			layout_box(s),
 			s.r_dashboard
