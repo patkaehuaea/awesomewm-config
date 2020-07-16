@@ -157,6 +157,7 @@ ruled.client.connect_signal("request::rules", function()
 		id         = 'messaging',
 		rule_any   = {
 			class = {
+				"[d|D]iscord",
 				"microsoft teams - preview",
 				"Microsoft Teams - Preview",
 				"[s|S]ignal",
