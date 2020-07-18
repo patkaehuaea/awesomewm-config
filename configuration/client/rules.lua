@@ -135,23 +135,6 @@ ruled.client.connect_signal("request::rules", function()
       switchtotag = true
     }
   }
-  
-  ruled.client.append_rule {
-    id         = 'mail',
-    -- Does not seem to work with above 'web' rule if I specify
-    -- class with rules_every. Have to leave matching on
-    -- window manager name for now.
-    rule_any = {
-      name = {
-        'Outlook',
-        'ProtonMail'
-      }
-    },
-    properties = { 
-      tag =  '﫯',
-      switchtotag = true
-    }
-  }
 
   ruled.client.append_rule {
     id         = 'messaging',
