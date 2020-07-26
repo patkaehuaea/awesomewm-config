@@ -160,7 +160,7 @@ theme.tooltip_fg = xrdb.foreground
 theme.tooltip_border_color = theme.transparent
 theme.tooltip_border_width = 0
 theme.tooltip_shape = function(cr, w, h)
-	gears.shape.rounded_rect(cr, w, h, dpi(6))
+  gears.shape.rounded_rect(cr, w, h, dpi(6))
 
 -- Separators
 
@@ -192,54 +192,54 @@ theme.layout_cascade     = theme.lain_icons .. "cascade.png"
 theme.layout_cascadetile = theme.lain_icons .. "cascadetile.png" -- cascade.tile
 theme.layout_centerwork  = theme.lain_icons .. "centerworkw.png"
 theme.layout_centerworkh = theme.lain_icons .. "centerworkh.png" -- centerwork.horizontal
-	-- Taglist
+  -- Taglist
   -- Adjust size of glyphs here.
-	theme.taglist_font = 'Source Code Pro for Powerline 16'
-	theme.taglist_bg_empty = theme.background .. '99'
-	-- Set to background since setting is redundant given
-	-- empty tags are filtered.
-	theme.taglist_bg_occupied = theme.background --'#ffffff' .. '1A'
-	theme.taglist_bg_urgent = "#E91E63" .. '99'
+  theme.taglist_font = 'Source Code Pro for Powerline 16'
+  theme.taglist_bg_empty = theme.background .. '99'
+  -- Set to background since setting is redundant given
+  -- empty tags are filtered.
+  theme.taglist_bg_occupied = theme.background --'#ffffff' .. '1A'
+  theme.taglist_bg_urgent = "#E91E63" .. '99'
   theme.taglist_bg_focus = theme.background
 -- Changes font color rather than background.
---	theme.taglist_fg_focus =  '#A3BE8C'
+--  theme.taglist_fg_focus =  '#A3BE8C'
 theme.taglist_bg_focus =  '#81A1C1' -- color4: nord9 - blue
 --theme.taglist_bg_focus =  '#A3BE8C'-- color10: nord14 - light green
-	theme.taglist_spacing = dpi(2)
+  theme.taglist_spacing = dpi(2)
 
-	-- Tasklist
+  -- Tasklist
 
-	theme.tasklist_font = 'SFNS Display 10'
-	theme.tasklist_bg_normal = theme.background .. '99'
-	theme.tasklist_bg_focus = theme.background
-	theme.tasklist_bg_urgent = "#E91E63" .. '99'
-	theme.tasklist_fg_focus = '#DDDDDD'
-	theme.tasklist_fg_urgent = "#ffffff"
-	theme.tasklist_fg_normal = '#AAAAAA'
+  theme.tasklist_font = 'SFNS Display 10'
+  theme.tasklist_bg_normal = theme.background .. '99'
+  theme.tasklist_bg_focus = theme.background
+  theme.tasklist_bg_urgent = "#E91E63" .. '99'
+  theme.tasklist_fg_focus = '#DDDDDD'
+  theme.tasklist_fg_urgent = "#ffffff"
+  theme.tasklist_fg_normal = '#AAAAAA'
 
-	-- Notification
+  -- Notification
 
-	theme.notification_position = 'top_right'
-	theme.notification_bg = theme.transparent
-	theme.notification_margin = dpi(5)
-	theme.notification_border_width = dpi(0)
-	theme.notification_border_color = theme.transparent
-	theme.notification_spacing = dpi(0)
-	theme.notification_icon_resize_strategy = 'center'
-	theme.notification_icon_size = dpi(32)
-	
-	-- Client Snap Theme
+  theme.notification_position = 'top_right'
+  theme.notification_bg = theme.transparent
+  theme.notification_margin = dpi(5)
+  theme.notification_border_width = dpi(0)
+  theme.notification_border_color = theme.transparent
+  theme.notification_spacing = dpi(0)
+  theme.notification_icon_resize_strategy = 'center'
+  theme.notification_icon_size = dpi(32)
+  
+  -- Client Snap Theme
 
-	theme.snap_bg = theme.background
-	theme.snap_shape = gears.shape.rectangle
-	theme.snap_border_width = dpi(15)
+  theme.snap_bg = theme.background
+  theme.snap_shape = gears.shape.rectangle
+  theme.snap_border_width = dpi(15)
 
-	-- Hotkey popup
+  -- Hotkey popup
 
-	theme.hotkeys_font = 'SFNS Display Bold'
-	theme.hotkeys_description_font   = 'SFNS Display'
-	theme.hotkeys_bg = theme.background
-	theme.hotkeys_group_margin = dpi(20)
+  theme.hotkeys_font = 'SFNS Display Bold'
+  theme.hotkeys_description_font   = 'SFNS Display'
+  theme.hotkeys_bg = theme.background
+  theme.hotkeys_group_margin = dpi(20)
 
 end
 
