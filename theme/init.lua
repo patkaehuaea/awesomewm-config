@@ -26,7 +26,7 @@ theme.icons = theme.dir .. '/icons/'
 
 -- Wallpaper
 
-theme.wallpaper = os.getenv("HOME") .. '/Pictures/Wallpapers/cappadocia.jpg'
+theme.wallpaper = theme_dir .. '/wallpapers/john-fowler-RsRTIofe0HE-unsplash.jpg'
 
 -- Foreground
 
