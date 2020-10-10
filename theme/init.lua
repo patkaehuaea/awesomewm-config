@@ -135,7 +135,9 @@ theme.border_width = dpi(0)
 theme.border_radius = dpi(0)
 
 -- Decorations
-theme.client_radius = dpi(9)
+-- The client-radius property controls how rounded the corders of a window are.
+-- Lower numbers mean less of the corner is round or lower radius.
+theme.client_radius = dpi(4)
 theme.useless_gap = dpi(4)
 
 -- Menu
@@ -160,7 +162,7 @@ theme.tooltip_fg = xrdb.foreground
 theme.tooltip_border_color = theme.transparent
 theme.tooltip_border_width = 0
 theme.tooltip_shape = function(cr, w, h)
-  gears.shape.rounded_rect(cr, w, h, dpi(6))
+gears.shape.rounded_rect(cr, w, h, dpi(6))
 
 -- Separators
 

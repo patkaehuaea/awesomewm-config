@@ -292,7 +292,6 @@ local TopPanel = function(s, offset)
   s.screen_rec  = require('widget.screen-recorder')()
   s.blue_light = require('widget.blue-light')
   s.float_panel   = require('layout.floating-panel')()
-  s.r_dashboard   = require('layout.right-panel.right-panel-opener')()
   s.mytaglist = awful.widget.taglist {
     screen = s, 
     -- Display tags with clients. List of available 
@@ -323,8 +322,7 @@ local TopPanel = function(s, offset)
       s.updater,
       s.screen_rec,
       s.end_session,
-      layout_box(s),
-      s.r_dashboard
+      layout_box(s)
     }
   }
 

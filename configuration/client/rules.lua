@@ -35,7 +35,7 @@ ruled.client.connect_signal("request::rules", function()
   -- Dialogs
   ruled.client.append_rule {
     id         = "dialog",
-    rule_any   = { 
+    rule_any   = {
       type = { "dialog" },
       class = { "Wicd-client.py", "calendar.google.com" },
     },
@@ -114,6 +114,8 @@ ruled.client.connect_signal("request::rules", function()
     },
     properties = {
       tag =   '',
+      titlebars_enabled = false,
+      hide_titlebars = true,
       switchtotag = true,
       draw_backdrop = false,
       size_hints_honor = false
@@ -212,7 +214,6 @@ ruled.client.connect_signal("request::rules", function()
     },
       properties = { 
       skip_decoration = true,
-      round_corners = true,
       ontop = true,
       floating = true,
       draw_backdrop = false,

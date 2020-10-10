@@ -37,11 +37,9 @@ require('module.auto-start')
 require('module.decorate-client')
 require('module.backdrop')
 require('module.end-session')
-require('module.titlebar')
 require('module.menu')
 require('module.volume-osd')
-require('module.brightness-osd')
---require('module.lockscreen')
+require('module.lockscreen')
 
 --  ========================================
 --        Configuration
