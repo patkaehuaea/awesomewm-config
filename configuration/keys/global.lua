@@ -104,7 +104,7 @@ local globalKeys = awful.util.table.join(
         {description = 'decrease the number of columns', group = 'layout'}
     ),
     awful.key(
-        {modkey},
+        {altkey},
         'space',
         function()
             awful.layout.inc(1)
@@ -406,7 +406,7 @@ local globalKeys = awful.util.table.join(
         {description = "open system monitor", group = 'launcher'}
     ),
     awful.key(
-        {altkey}, 
+        {modkey},
         'space',
         function()
             local focused = awful.screen.focused()
