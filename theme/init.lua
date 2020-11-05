@@ -131,7 +131,7 @@ theme.groups_radius = dpi(12)
 theme.border_focus = xrdb.color12
 theme.border_normal = xrdb.color0
 theme.border_marked = xrdb.color10
-theme.border_width = dpi(0)
+theme.border_width = dpi(3)
 theme.border_radius = dpi(0)
 
 -- Decorations
