@@ -153,20 +153,6 @@ local globalKeys = awful.util.table.join(
         end, 
         {description = "view previous non-empty tag", group = "tag"}
     ),
-    awful.key({ modkey, "Control" }, 
-        "s",
-        function ()
-            -- tag_view_nonempty(1)
-            local focused =  awful.screen.focused()
-            for i = 1, #focused.tags do
-                awful.tag.viewidx(1, focused)
-                if #focused.clients > 0 then
-                    return
-                end
-            end
-        end, 
-        {description = "view next non-empty tag", group = "tag"}
-    ),
     awful.key(
         {modkey, 'Shift'}, 
         "F1",  
