@@ -1,7 +1,5 @@
 local filesystem = require('gears.filesystem')
-
 local config_dir = filesystem.get_configuration_dir()
-local bin_dir = config_dir .. 'binaries/'
 
 
 return {
@@ -15,7 +13,6 @@ return {
 		bluetooth_manager 								= 'blueman-manager',						-- Bluetooth manager
 		lock = 'xflock4',  -- Lockscreen
 		package_manager 								= 'pamac-manager',							-- GUI Package manager
-		--lock 											= 'awesome-client "_G.show_lockscreen()"',  -- Lockscreen
 		rofiweb											= 'rofi -dpi ' .. screen.primary.dpi .. 
 														  ' -show Search -modi Search:' .. config_dir .. 
 														  '/configuration/rofi/sidebar/rofi-web-search.py' .. 
@@ -25,17 +22,4 @@ return {
 		rofiappmenu 									= 'rofi -dpi ' .. screen.primary.dpi ..
 														  ' -show drun -theme ~/.config/rofi/launchers/nord.rasi'   -- Application Menu
 	},
-	
-	run_on_start_up = {
-	  'xfce4-screensaver --no-daemon',
-		'xrdb $HOME/.Xresources', -- X windows config and settings
-	},
-
-	-- List of binaries that will execute a certain task
-
-	bins = {
-		full_screenshot = bin_dir .. 'snap full',              					                    -- Full Screenshot
-		area_screenshot = bin_dir .. 'snap area',			                                        -- Area Selected Screenshot
-		capslock_status = bin_dir .. 'capschecker'													-- Returns CapsLock Status
-	}
 }

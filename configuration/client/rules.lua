@@ -103,43 +103,9 @@ ruled.client.connect_signal("request::rules", function()
       placement = awful.placement.centered
     }
   }
-
-  -- terminal emulators
-  ruled.client.append_rule {
-    id         = "terminals",
-    rule_any   = { 
-      class = { 
-        "Alacritty"
-      },
-    },
-    properties = {
-      tag =   '',
-      titlebars_enabled = false,
-      hide_titlebars = true,
-      switchtotag = true,
-      draw_backdrop = false,
-      size_hints_honor = false
-    }
-  }
   
-  -- Browsers
   ruled.client.append_rule {
-    id         = "web",
-    rule_any   = {
-      class = {
-        "firefox",
-        "google-chrome",
-        "Google-chrome"
-      }
-    },
-    properties = {
-      tag =  '',
-      switchtotag = true
-    }
-  }
-
-  ruled.client.append_rule {
-    id         = 'messaging',
+    id         = 'chat',
     rule_any   = {
       class = {
         "[d|D]iscord",
@@ -150,7 +116,7 @@ ruled.client.connect_signal("request::rules", function()
       }
     },
     properties = { 
-      tag =  '﬐',
+      tag =  'chat',
       switchtotag = true
     }
   }
@@ -165,7 +131,7 @@ ruled.client.connect_signal("request::rules", function()
       }
     },
     properties = {
-      tag =  '',
+      tag =  'media',
       draw_backdrop = false,
       switchtotag = true
     }
@@ -179,7 +145,7 @@ ruled.client.connect_signal("request::rules", function()
       },
     },
     properties = {
-      tag =  '',
+      tag =  'vm',
       floating = true,
     }
   }

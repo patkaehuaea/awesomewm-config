@@ -16,8 +16,8 @@ theme.background = xrdb.background
 theme.transparent = '#00000000'
 
 -- Font
-theme.font = 'SFNS Display 16'
-theme.font_bold = 'SFNS Display Bold 16'
+theme.font = 'SFNS Display 12'
+theme.font_bold = 'SFNS Display Bold 12'
 
 -- Menu icon theme
 theme.icon_theme = 'Papirus'
@@ -30,8 +30,8 @@ theme.wallpaper = theme_dir .. '/wallpapers/john-fowler-RsRTIofe0HE-unsplash.jpg
 
 -- Foreground
 
-theme.font = 'SFNS Display 16'
-theme.title_font = 'SFNS Display 16'
+theme.font = 'SFNS Display 12'
+theme.title_font = 'SFNS Display 12'
 
 theme.fg_normal = xrdb.foreground
 theme.fg_focus = xrdb.background
@@ -141,7 +141,7 @@ theme.client_radius = dpi(4)
 theme.useless_gap = dpi(4)
 
 -- Menu
-theme.menu_font = "SFNS Display 14"
+theme.menu_font = "SFNS Display 12"
 theme.menu_submenu = '' -- ➤
 
 theme.menu_height = dpi(34)
@@ -157,7 +157,7 @@ theme.menu_border_color = xrdb.background:sub(1,7) .. '5C'
 -- Tooltips
 
 theme.tooltip_bg = xrdb.background
-theme.tooltip_font = 'SFNS Display 14'
+theme.tooltip_font = 'SFNS Display 12'
 theme.tooltip_fg = xrdb.foreground
 theme.tooltip_border_color = theme.transparent
 theme.tooltip_border_width = 0
@@ -196,7 +196,7 @@ theme.layout_centerwork  = theme.lain_icons .. "centerworkw.png"
 theme.layout_centerworkh = theme.lain_icons .. "centerworkh.png" -- centerwork.horizontal
   -- Taglist
   -- Adjust size of glyphs here.
-  theme.taglist_font = 'Source Code Pro for Powerline 16'
+  theme.taglist_font = 'SFNS Display 12'
   theme.taglist_bg_empty = theme.background .. '99'
   -- Set to background since setting is redundant given
   -- empty tags are filtered.
@@ -211,7 +211,7 @@ theme.taglist_bg_focus =  '#81A1C1' -- color4: nord9 - blue
 
   -- Tasklist
 
-  theme.tasklist_font = 'SFNS Display 10'
+  theme.tasklist_font = 'SFNS Display 12'
   theme.tasklist_bg_normal = theme.background .. '99'
   theme.tasklist_bg_focus = theme.background
   theme.tasklist_bg_urgent = "#E91E63" .. '99'

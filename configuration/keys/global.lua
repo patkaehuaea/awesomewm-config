@@ -377,9 +377,9 @@ local globalKeys = awful.util.table.join(
     ),
     awful.key(
         {modkey, "Shift"}, 
-        'f',
+        'Return',
         function()
-            awful.spawn(apps.default.web_browser)
+            awful.spawn("twmu launch browser --name firefox")
         end,
         {description = "open default web browser", group = 'launcher'}
     ),

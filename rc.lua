@@ -33,13 +33,11 @@ require('layout')
 --  ========================================
 
 require('module.notifications')
-require('module.auto-start')
 require('module.decorate-client')
 require('module.backdrop')
 require('module.end-session')
 require('module.menu')
 require('module.volume-osd')
-require('module.lockscreen')
 
 --  ========================================
 --        Configuration

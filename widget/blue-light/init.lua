@@ -10,7 +10,7 @@ local icons = require('theme.icons')
 local blue_light_state = nil
 
 local action_name = wibox.widget {
-	font = 'SFNS Display 11',
+	font = 'SFNS Display 12',
 	align = 'left',
 	widget = wibox.widget.textbox
 }

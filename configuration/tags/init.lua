@@ -6,41 +6,49 @@ local icons = require('theme.icons')
 
 local tags = {
   {
-    name = '',
-    --icon = icons.terminal,
+    name = 'home',
     layout = awful.layout.suit.tile,
-    type = 'terminal',
+    type = 'home',
     defaultApp = 'Alacritty',
     screen = 1
   },
   {
-    name = '',
-    --icons.web_browser,
+    
+    --name = '',
+    name = 'work',
     layout = awful.layout.suit.tile,
     -- Don't think we need type.
-    type = 'web',
+    type = 'work',
     defaultApp = 'google-chrome',
     screen = 1
   },
   {
-    name ='﬐',
-    --icon = '/usr/share/icons/ePapirus/16x16/apps/slack.svg',
+    --name ='﬐',
+    name ='chat',
     layout = awful.layout.suit.tile,
     type = 'chat',
     defaultApp = 'slack',
     screen = 1
   },
   {
-    name = '',
-    --icon = icons.multimedia,
+    --name ='',
+    name ='code',
+    layout = awful.layout.suit.tile,
+    type = 'code',
+    defaultApp = 'slack',
+    screen = 1
+  },
+  {
+    --name = '',
+    name = 'media',
     layout = awful.layout.suit.tile,
     type = 'media',
     defaultApp = 'Spotify',
     screen = 1
   },
   {
-    name = '',
-    --icon = icons.sandbox,
+    --name = '',
+    name = 'vm',
     layout = awful.layout.suit.floating,
     type = 'virtualbox',
     defaultApp = 'virtualbox',
@@ -59,8 +67,6 @@ screen.connect_signal("request::desktop_decoration", function(s)
     awful.tag.add(
       tag.name,
       {
-        --icon = tag.icon,
-        --icon_only = true,
         layout = tag.layout,
         gap_single_client = false,
         gap = beautiful.useless_gap,

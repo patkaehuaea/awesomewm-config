@@ -146,7 +146,7 @@ local TopPanel = function(s, offset)
   }
 
   s.clock_widget = wibox.widget.textclock(
-    '<span font="SFNS Display Bold 11">%A, %I:%M %p</span>',
+    '<span font="SFNS Display Bold 12">%A, %I:%M %p</span>',
     1
   )
 

@@ -5,6 +5,13 @@ local dir = os.getenv('HOME') .. '/.config/awesome/theme/icons/'
 return {
 
 	-- Action Bar
+	
+	home 		= dir .. 'tag-list/' .. 'home.svg',
+	code 		= dir .. 'tag-list/' .. 'code.svg',
+	coffee 		= dir .. 'tag-list/' .. 'coffee.svg',
+	comments 		= dir .. 'tag-list/' .. 'comments.svg',
+	laptop 		= dir .. 'tag-list/' .. 'laptop.svg',
+	headphones 		= dir .. 'tag-list/' .. 'headphones.svg',
 	web_browser 		= dir .. 'tag-list/' .. 'web-browser.svg',
 	text_editor			= dir .. 'tag-list/' .. 'text-editor.svg',
 	social				= dir .. 'tag-list/' .. 'social.svg',
