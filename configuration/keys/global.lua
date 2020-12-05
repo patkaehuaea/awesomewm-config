@@ -289,20 +289,20 @@ local globalKeys = awful.util.table.join(
         {description = "toggle music widget", group = 'launcher'}
     ),
     awful.key(
-        { }, 
-        "Print",
+        {modkey, "Shift"}, 
+        "s",
         function ()
-            awful.spawn.easy_async_with_shell(apps.bins.full_screenshot,function() end)
+            awful.spawn.easy_async_with_shell('scrot -u',function() end)
         end,
-        {description = "fullscreen screenshot", group = 'Utility'}
+        {description = "focused client screenshot", group = 'Utility'}
     ),
     awful.key(
-        {modkey, "Shift"}, 
-        's',
+        {modkey}, 
+        'm',
         function ()
-            awful.spawn.easy_async_with_shell(apps.bins.area_screenshot,function() end)
+            awful.spawn.easy_async_with_shell("scrot -s",function() end)
         end,
-        {description = "area/selected screenshot", group = 'Utility'}
+        {descrrption = "area/selected screenshot", group = 'Utility'}
     ),
     awful.key(
         {modkey},
