@@ -85,6 +85,16 @@ local clientKeys =
   ),
 
     awful.key(
+      { modkey},
+      "b",
+      function (c)
+        c.border_width  = c.border_width > 0 and 0 or beautiful.border_width 
+        --c.border_width  = 0
+      end,
+      {description = "toggle border", group = "client"}
+    ),
+
+    awful.key(
         {modkey, 'Control'},
         'n',
         function()

@@ -150,6 +150,23 @@ ruled.client.connect_signal("request::rules", function()
     }
   }
 
+  -- Always float Twitch's 'Picture-In-Picture' mode on
+  -- top of other clients.
+  ruled.client.append_rule {
+    id         = "twitch",
+    rule_all  = {
+      -- Class is the second while instance is the first.
+      class = { "firefox" },
+      instance = { "Toolkit" },
+      type = { "utility" },
+      icon_name = { "Picture-in-Picture" },
+    },
+    properties = {
+      floating = true,
+      ontop = true,
+    }
+  }
+
   -- Hide titlebars
   ruled.client.append_rule {
     id        = "hide_titlebars",

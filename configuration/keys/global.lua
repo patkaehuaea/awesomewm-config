@@ -104,7 +104,7 @@ local globalKeys = awful.util.table.join(
         {description = 'decrease the number of columns', group = 'layout'}
     ),
     awful.key(
-        {altkey},
+        {modkey},
         'space',
         function()
             awful.layout.inc(1)
@@ -384,16 +384,8 @@ local globalKeys = awful.util.table.join(
         {description = "open default web browser", group = 'launcher'}
     ),
     awful.key(
-        {"Control", "Shift"}, 
-        'Escape',
-        function()
-            awful.spawn(apps.default.terminal .. ' ' .. 'htop')
-        end,
-        {description = "open system monitor", group = 'launcher'}
-    ),
-    awful.key(
-        {modkey},
-        'space',
+        {modkey}, 
+        'p',
         function()
             local focused = awful.screen.focused()
 
@@ -403,44 +395,6 @@ local globalKeys = awful.util.table.join(
             awful.util.spawn(apps.default.rofiappmenu)
         end,
         {description = "open application drawer", group = 'launcher'}
-    ),
-    awful.key(
-        {modkey}, 
-        'F2',
-        function()
-            local focused = awful.screen.focused()
-
-            if focused.right_panel then
-                if _G.right_panel_mode == 'today_mode' or not focused.right_panel.visible then
-                    focused.right_panel:toggle()
-                    switch_rdb_pane('today_mode')
-                else
-                    switch_rdb_pane('today_mode')
-                end
-
-                _G.right_panel_mode = 'today_mode'
-            end
-        end,
-        {description = "open today panel", group = 'launcher'}
-    ),
-    awful.key(
-        {modkey}, 
-        'F3',
-        function()
-            local focused = awful.screen.focused()
-
-            if focused.right_panel then
-                if _G.right_panel_mode == 'settings_mode' or not focused.right_panel.visible then
-                    focused.right_panel:toggle()
-                    switch_rdb_pane('settings_mode')
-                else
-                    switch_rdb_pane('settings_mode')
-                end
-
-                _G.right_panel_mode = 'settings_mode'
-            end
-        end,
-        {description = "open settings panel", group = 'launcher'}
     )
 )
 
